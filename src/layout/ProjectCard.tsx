@@ -1,0 +1,38 @@
+import { fadeUp } from '@/lib/animations';
+import { motion } from 'motion/react';
+import type { ProjectType } from '@/types';
+
+export const ProjectCard = ({
+  imgSrc,
+  projectLink,
+  tags,
+  title,
+}: ProjectType) => {
+  return (
+    <motion.div
+      variants={fadeUp}
+      className='relative'
+    >
+      <figure className='overflow-hidden rounded-md'>
+        <img
+          src={imgSrc}
+          alt={title}
+          className='rounded-md transition duration-500 hover:scale-115 w-full'
+        />
+      </figure>
+      <div className='absolute bottom-0 p-2 flex gap-2'>
+        {tags.map((tags, i) => (
+          <span
+            key={i}
+            className='bg-background hover:bg-primary
+          hover:text-black py-1 px-2 rounded-sm text-sm cursor-pointer '
+          >
+            {tags}
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+export default ProjectCard;
