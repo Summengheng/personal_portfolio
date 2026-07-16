@@ -10,6 +10,8 @@ export type ProjectType = {
   title: string;
   tags: string[];
   projectLink: string;
+  description?: string;
+  tech?: string[];
 };
 
 export type ExperienceType = {
@@ -22,7 +24,6 @@ export type ExperienceType = {
 export type ServiceType = {
   title: string;
   desc: string;
-  projects: string;
   icon: JSX.Element;
 };
 

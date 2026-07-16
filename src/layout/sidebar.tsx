@@ -11,14 +11,16 @@ import { navLinks, socialLinks } from '@/constants';
 import { cn } from '@/lib/utils';
 
 export const sidebar = () => {
+  const [open, setOpen] = useState(false);
   const [active, setActive] = useState('#hero');
   return (
     <>
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button
             variant='ghost'
             size='icon'
+            onClick={() => setOpen((prev) => !prev)}
             className='m-4 fixed top-4 right-4 z-50 border-2 hover:border-primary bg-neutral-800 py-5 px-5 rounded-full hover:text-primary cursor-pointer'
           >
             <MenuIcon size={30} />
@@ -38,13 +40,16 @@ export const sidebar = () => {
                 <a
                   key={link.label}
                   href={link.link}
-                  onClick={() => setActive(link.link)}
+                  onClick={() => {
+                    setActive(link.link);
+                    setOpen(false);
+                  }}
                   className={cn(
                     'text-neutral-300 flex items-center gap-2 hover:text-primary transition-colors duration-200 text-base',
                     active === link.link && 'text-primary',
                   )}
                 >
-                  <Icon classNam='size-4' /> {link.label}
+                  <Icon className='size-4' /> {link.label}
                 </a>
               );
             })}
@@ -58,6 +63,8 @@ export const sidebar = () => {
                   <a
                     key={i}
                     href={social.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
                     className='hover:text-primary border-2 border-neutral-500 p-2 rounded-full hover:border-primary transition duration-200'
                   >
                     <Icon className='size-4' />

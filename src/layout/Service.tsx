@@ -12,7 +12,7 @@ export const Service = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={staggerContainer(0)}
       className='mt-30 scroll-mt-10'
-      id='service'
+      id='services'
     >
       <SectionHeader
         subtitle='Service'

@@ -28,10 +28,7 @@ export const Projects = () => {
         {projectsData.map((project, i) => (
           <ProjectCard
             key={i}
-            imgSrc={project.imgSrc}
-            projectLink={project.projectLink}
-            tags={project.tags}
-            title={project.title}
+            {...project}
           />
         ))}
       </motion.div>

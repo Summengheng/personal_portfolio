@@ -17,9 +17,7 @@ export const Profile = () => {
         />
         <div className='mt-6'>
           <p className='text-sm text-neutral-300'>Specialization</p>
-          <p className='text-lg capitalize'>
-            Frontend Developer and Web Developer
-          </p>
+          <p className='text-lg capitalize'>Frontend Developer</p>
         </div>
         <div>
           <p className='text-sm text-neutral-300'>Base in:</p>
@@ -32,6 +30,9 @@ export const Profile = () => {
               <a
                 key={i}
                 href={social.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hover:text-primary transition duration-200'
               >
                 <Icon className='size-6' />
               </a>
@@ -41,8 +42,15 @@ export const Profile = () => {
         <Button
           className='mt-2'
           size='lg'
+          asChild
         >
-          Let's Work
+          <a
+            href='https://t.me/summengheng'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Let's Work
+          </a>
         </Button>
       </div>
     </aside>
