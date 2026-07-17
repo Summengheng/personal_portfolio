@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 export const Profile = () => {
   return (
     <aside className='max-w-3xl border m-6 border-neutral-600 bg-neutral-900 text-white p-6 rounded-lg lg:sticky lg:left-0 lg:top-6 lg:w-96'>
-      <div className='flex flex-col gap-4'>
-        <div className='flex items-center justify-between gap-x-10'>
+      <div className='flex flex-col gap-1'>
+        <div className=''>
           <h1 className='text-3xl font-bold'>Mengheng</h1>
-          <p className='text-sm'>Frontend Developer</p>
+          <p className='text-sm'>Web Developer</p>
         </div>
 
         <img

@@ -24,7 +24,7 @@ import { Profile } from '@/layout/Profile';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className='min-h-screen lg:flex lg:justify-center lg:items-start lg:gap-10'>
+    <div className='min-h-screen lg:flex lg:justify-center lg:items-start lg:gap-6'>
       <SideBar />
       <FloatingMenu />
       <Profile />

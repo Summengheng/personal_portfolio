@@ -21,15 +21,16 @@ export const About = () => {
         variants={fadeUp}
         className='mt-2 text-neutral-300'
       >
-        I'm a Frontend Developer with over two years of professional experience
-        building responsive and high-performance web applications. During my
-        time at KG Software, I developed modern interfaces using Vue.js,
-        TypeScript, HTML, CSS, and JavaScript, integrated REST APIs, and worked
-        closely with designers and backend developers to deliver reliable
-        digital solutions. I enjoy transforming UI/UX designs into intuitive
-        user experiences, writing clean and maintainable code, and continuously
-        learning new technologies. I'm currently expanding my skills with React
-        while staying committed to building fast, scalable, and user-focused web
+        I'm a Web Developer with over two years of professional experience
+        building responsive and high-performance web applications. My expertise
+        is in frontend development, where I create modern user interfaces using
+        Vue.js, TypeScript, HTML, CSS, and JavaScript while integrating REST
+        APIs and collaborating with designers and backend developers to deliver
+        reliable digital solutions. I enjoy transforming UI/UX designs into
+        intuitive and engaging user experiences while writing clean,
+        maintainable, and scalable code. Passionate about continuous learning,
+        I'm currently expanding my skills in React and modern frontend
+        technologies to build fast, accessible, and user-focused web
         applications.
       </motion.p>
 
@@ -50,8 +51,15 @@ export const About = () => {
         variants={fadeUp}
         transition={{ delay: 0.2 }}
       >
-        <Button className='mt-5' asChild>
-          <a href='https://t.me/summengheng' target='_blank' rel='noopener noreferrer'>
+        <Button
+          className='mt-5'
+          asChild
+        >
+          <a
+            href='https://t.me/summengheng'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Contact Me
           </a>
         </Button>

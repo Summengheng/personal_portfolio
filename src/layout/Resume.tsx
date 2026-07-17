@@ -24,12 +24,12 @@ export const Resume = () => {
         variants={fadeUp}
         className='mt-4 text-neutral-300'
       >
-        I have over two years of professional experience as a Frontend
-        Developer, building responsive and high-performance web applications. My
-        experience includes developing modern user interfaces with Vue.js and
-        TypeScript, integrating REST APIs, optimizing application performance,
-        and collaborating with designers and backend developers to deliver
-        scalable digital solutions. I'm passionate about writing clean code and
+        I have over two years of professional experience as a Web Developer,
+        building responsive and high-performance web applications. My experience
+        includes developing modern user interfaces with Vue.js and TypeScript,
+        integrating REST APIs, optimizing application performance, and
+        collaborating with designers and backend developers to deliver scalable
+        digital solutions. I'm passionate about writing clean code and
         continuously learning modern web technologies.
       </motion.p>
 
