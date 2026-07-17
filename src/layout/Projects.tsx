@@ -1,4 +1,4 @@
-import { motion, stagger } from 'motion/react';
+import { motion } from 'motion/react';
 import { staggerContainer } from '@/lib/animations';
 import { projectsData } from '@/constants';
 import { SectionHeader } from '@/layout/SectionHeader';

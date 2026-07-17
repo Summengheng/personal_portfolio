@@ -42,7 +42,6 @@ export const Profile = () => {
         <Button
           className='mt-2'
           size='lg'
-          asChild
         >
           <a
             href='https://t.me/summengheng'

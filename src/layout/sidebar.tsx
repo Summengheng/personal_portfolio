@@ -15,17 +15,22 @@ export const sidebar = () => {
   const [active, setActive] = useState('#hero');
   return (
     <>
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger asChild>
-          <Button
-            variant='ghost'
-            size='icon'
-            onClick={() => setOpen((prev) => !prev)}
-            className='m-4 fixed top-4 right-4 z-50 border-2 hover:border-primary bg-neutral-800 py-5 px-5 rounded-full hover:text-primary cursor-pointer'
-          >
-            <MenuIcon size={30} />
-          </Button>
-        </SheetTrigger>
+      <Sheet
+        open={open}
+        onOpenChange={setOpen}
+      >
+        <SheetTrigger
+          render={
+            <Button
+              variant='ghost'
+              size='icon'
+              onClick={() => setOpen((prev) => !prev)}
+              className='m-4 fixed top-4 right-4 z-50 border-2 hover:border-primary bg-neutral-800 py-5 px-5 rounded-full hover:text-primary cursor-pointer'
+            >
+              <MenuIcon size={30} />
+            </Button>
+          }
+        ></SheetTrigger>
 
         <SheetContent
           side='right'

@@ -51,10 +51,7 @@ export const About = () => {
         variants={fadeUp}
         transition={{ delay: 0.2 }}
       >
-        <Button
-          className='mt-5'
-          asChild
-        >
+        <Button className='mt-5'>
           <a
             href='https://t.me/summengheng'
             target='_blank'
