@@ -6,6 +6,7 @@ import { ExpCard } from '@/layout/ExpCard';
 import { ToolsCard } from '@/layout/ToolsCard';
 
 export const Resume = () => {
+  console.log('experience', experience);
   return (
     <motion.section
       initial='hidden'

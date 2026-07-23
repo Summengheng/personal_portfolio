@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 
-import type { Variants } from 'framer-motion';
+import type { Variants } from 'motion/react';
 
 // Container variant for staggering children
 export const staggerContainer = (delay = 0): Variants => ({
